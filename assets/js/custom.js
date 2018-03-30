@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var request = $.ajax({
-    url: 'https://app.greathearts.community/api/v1/organizations',
+    url: 'http://localhost:3000/api/v1/organizations',
     method: 'get',
     crossDomain: true
   });
