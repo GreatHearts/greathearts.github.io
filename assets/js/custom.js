@@ -19,7 +19,9 @@ $(document).ready(function() {
     });
   });
 
-  $('#navbar-search').on('change', 'input', function(e) {
+  $('#navbar-search').on('change', 'input', functio
+
+    n(e) {
   	e.preventDefault();
     var query = $('input').val();
     var searchLink = 'https://app.greathearts.community/search_results?utf8=✓&query=' + query.split(' ').join('+');
