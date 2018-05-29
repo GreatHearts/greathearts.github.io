@@ -1,6 +1,7 @@
 .navbar {
     margin-bottom: 0px;
     border-bottom: 3px solid #72C02C;
+    background-color: white;
     .navbar-default {
         border-radius: none;
     }
@@ -23,6 +24,19 @@
     border: none;
 }
 
+#search-btn {
+    border: none;
+    .search > .fa > .fa-search > .search-btn {
+        color: grey;
+    }
+}
+
+.form-control {
+    border: none;
+    border-left: 1px solid grey;
+    width: 190px;
+    padding-left: 15px;
+}
 
 
 /*@media (max-width: 1290px){*/
