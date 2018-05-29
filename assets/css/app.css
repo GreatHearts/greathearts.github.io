@@ -4232,7 +4232,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+
+@media (max-width: 1290px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  #mobile-list {
+    display: none;
+  }
+}
+
+@media (min-width: 1290px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -4356,9 +4366,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (max-width: 1290px) {
   .navbar-toggle {
-    display: none;
+    display: block;
   }
 }
 .navbar-nav {
