@@ -142,38 +142,22 @@
     <div id="header">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header ">
-                    <ul id="mobile-list">
-                        <li>
-                            <a onClick="signUpLock.show();" class="login-button btn-default" id="login-mobile" href="#">
-                                Login
-                            </a>
-                            
-                        </li>
-                        <li>
-                            <a class="signup--button" id="signup-mobile" data-toggle="modal" data-target="#signupModal" href="#">
-                                Sign Up
-                            </a>
-                            
-                        </li>
-                    </ul>
-                          
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-
-                    <a class="logo" href="index.html">
-                        <img class="logo" src="assets/img/GHILogo2.png"/>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="logo" href="/">
+                        <img class="navbar-logo" src="assets/img/GHILogo2.png"/>
                     </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav" id="navbar-links">
+                    <ul class="nav navbar-nav">
                         <li>
                             <a class="navbar-link" href="index.html">HOME</a>
                         </li>
@@ -184,26 +168,36 @@
                             <a class="navbar-link" href="orgs.html"><i class="fa fa-heart" style="color:red"></i> FOR NONPROFITS</a>
                         </li>
                         <li>
+                            <a class="navbar-link"
+                               href="http://www.governwell.net/">GOVERNWELL™
+                            </a>
+                        </li>
+                        <li>
                             <a class="navbar-link" href="about.html">ABOUT US</a>
                         </li>
                     </ul>
-                    <!-- navbar search -->
                     <form class="navbar-form navbar-left" id="navbar-search">
-                        <div class="form-group" id="search-form"> 
-                            <input type="text" placeholder="Find your cause/friends...">
+                        <div class="form-group" id="search-form">
+                            <input type="text"
+                                   class="form-control"
+                                   placeholder="Find your cause/friends...">
                         </div>
                         <a id="search-link" href="">
                             <div class="btn btn-default" id="search-btn"><i class="search fa fa-search search-btn"></i></div>
                         </a>
                     </form>
+
                     <ul class="nav navbar-nav navbar-right login" id="login">
                         <li>
-                            <a class="signup-button btn-primary" data-toggle="modal" data-target="#signupModal" href="#">
+                            <a class="signup-button btn-primary"
+                               data-toggle="modal" data-target="#signupModal"
+                               href="#">
                                 Signup
                             </a>
                         </li>
                         <li>
-                            <a class="btn-default" href="#" onClick="signUpLock.show();">
+                            <a class="btn-default login-button" href="#"
+                               onClick="signUpLock.show();">
                                 Login
                             </a>
                         </li>
@@ -211,7 +205,6 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-    </div>
     <!--=== End Header ===-->
 
     <!--=== Slider ===-->
