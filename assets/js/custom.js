@@ -33,6 +33,12 @@ $(document).ready(function() {
       window.location.href = searchLink;        
     }
   });
+
+  $('.slider-org').on('click', function(e) {
+      e.preventDefault();
+      var orgLink = $('li.slider-org').find('a').attr('href');
+      window.location = orgLink;
+  });
 });
 
 var signUpLock = new Auth0Lock('H3M1d2hsFo2hISIz6CUD6okg7Dew6rDI', 'greathearts.auth0.com', {
