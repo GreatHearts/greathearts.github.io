@@ -4233,15 +4233,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   overflow-y: auto;
 }
 
-@media (max-width: 1290px) {
-  .navbar-collapse.collapse {
-    display: none !important;
-  }
-  #mobile-list {
-    display: none;
-  }
-}
-
 @media (min-width: 1290px) {
   .navbar-collapse {
     width: auto;

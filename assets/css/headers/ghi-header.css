@@ -2,14 +2,22 @@
     margin-bottom: 0px;
     border-bottom: 5px solid #72C02C;
     background-color: white;
-    .navbar-default {
-        border-radius: none;
-    }
 }
+
+/*.navbar-default {*/
+/*border-radius: none;*/
+/*}*/
 .navbar-logo {
     max-width: 210px;
     padding: 10px;
 }
+
+@media (min-width: 768px) {
+    .navbar-toggle.collapsed {
+        display: none;
+    }
+}
+
 
 .navbar-default .navbar-nav>li>a {
     color: black;
