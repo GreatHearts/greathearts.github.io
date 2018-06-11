@@ -117,3 +117,7 @@ background: rgba(241,241,241,0.8);
 #topcontrol {
     display: none;
 }
+
+.slider-org {
+    cursor: pointer;
+}
