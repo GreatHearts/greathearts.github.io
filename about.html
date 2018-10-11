@@ -22,7 +22,7 @@
     <meta property="og:url" content="http://www.greathearts.community/about.html"/>
     <meta property="og:title" content="Great Hearts Community"/>
     <meta property="og:type" content="website"/>
-    <meta property="fb:app_id" content="275910499468937" /> 
+    <meta property="fb:app_id" content="275910499468937"/>
     <meta property="og:description"
           content="Great Hearts Initiatives® celebrates and supports the people and organizations that are doing
                         good in the world. Our story is really the collective stories of many people coming together to
@@ -84,36 +84,37 @@
     </script>
     <!--intercom-->
     <script>(function () {
-    var w = window;
-    var ic = w.Intercom;
-    if (typeof ic === "function") {
-    ic('reattach_activator');
-    ic('update', intercomSettings);
-    } else {
-    var d = document;
-    var i = function () {
-    i.c(arguments)
-    };
-    i.q = [];
-    i.c = function (args) {
-    i.q.push(args)
-    };
-    w.Intercom = i;
-    function l() {
-    var s = d.createElement('script');
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = 'https://widget.intercom.io/widget/k4mj2wop';
-    var x = d.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-    }
+        var w = window;
+        var ic = w.Intercom;
+        if (typeof ic === "function") {
+            ic('reattach_activator');
+            ic('update', intercomSettings);
+        } else {
+            var d = document;
+            var i = function () {
+                i.c(arguments)
+            };
+            i.q = [];
+            i.c = function (args) {
+                i.q.push(args)
+            };
+            w.Intercom = i;
 
-    if (w.attachEvent) {
-    w.attachEvent('onload', l);
-    } else {
-    w.addEventListener('load', l, false);
-    }
-    }
+            function l() {
+                var s = d.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://widget.intercom.io/widget/k4mj2wop';
+                var x = d.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+
+            if (w.attachEvent) {
+                w.attachEvent('onload', l);
+            } else {
+                w.addEventListener('load', l, false);
+            }
+        }
     })()</script>
 </head>
 <h1 class="hide">Great Hearts Initiatives | About Us</h1>
@@ -123,72 +124,70 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header ">
-                    <ul id="mobile-list">
-                        <li>
-                            <a onClick="signUpLock.show();" class="login-button btn-default" id="login-mobile" href="#">
-                                Login
-                            </a>
-
-                        </li>
-                        <li>
-                            <a class="signup--button" id="signup-mobile" data-toggle="modal" data-target="#signupModal"
-                               href="#">
-                                Sign Up
-                            </a>
-
-                        </li>
-                    </ul>
-
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
-                    <a class="logo" href="index.html">
-                        <img class="logo" src="assets/img/GHILogo2.png"/>
+                    <a class="logo" href="/">
+                        <img class="navbar-logo" src="assets/img/GHILogo2.png"/>
                     </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav" id="navbar-links">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
                         <li>
                             <a class="navbar-link" href="index.html">HOME</a>
                         </li>
                         <li>
-                            <a class="navbar-link" href="sponsors.html">SPONSORS</a>
+                            <a class="navbar-link"
+                               href="sponsors.html">SPONSORS</a>
                         </li>
                         <li>
-                            <a class="navbar-link" href="orgs.html"><i class="fa fa-heart" style="color:red"></i> FOR
+                            <a class="navbar-link" href="orgs.html"><i
+                                    class="fa fa-heart" style="color:red"></i> FOR
                                 NONPROFITS</a>
                         </li>
                         <li>
-                            <a class="navbar-link" href="about.html">ABOUT US</a>
+                            <a class="navbar-link"
+                               href="http://www.governwell.net/">GOVERNWELL™
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navbar-link" href="about.html">ABOUT
+                                US</a>
                         </li>
                     </ul>
-                    <!-- navbar search -->
                     <form class="navbar-form navbar-left" id="navbar-search">
                         <div class="form-group" id="search-form">
-                            <input type="text" placeholder="Find your cause/friends...">
+                            <input type="text"
+                                   class="form-control"
+                                   placeholder="Find your cause/friends...">
                         </div>
                         <a id="search-link" href="">
-                            <div class="btn btn-default" id="search-btn"><i class="search fa fa-search search-btn"></i>
+                            <div class="btn btn-default" id="search-btn"><i
+                                    class="search fa fa-search search-btn"></i>
                             </div>
                         </a>
                     </form>
+
                     <ul class="nav navbar-nav navbar-right login" id="login">
                         <li>
-                            <a class="signup-button btn-primary" data-toggle="modal" data-target="#signupModal"
+                            <a class="signup-button btn-primary"
+                               data-toggle="modal" data-target="#signupModal"
                                href="#">
                                 Signup
                             </a>
                         </li>
                         <li>
-                            <a class="btn-default" href="#" onClick="signUpLock.show();">
+                            <a class="btn-default login-button" href="#"
+                               onClick="signUpLock.show();">
                                 Login
                             </a>
                         </li>
@@ -311,7 +310,7 @@
                     <script type="text/javascript">
                         var lock = new Auth0Lock('H3M1d2hsFo2hISIz6CUD6okg7Dew6rDI', 'greathearts.auth0.com', {
                             container: 'auth0-root',
-                            allowedConnections: ['Username-Password-Authentication','facebook','google-oauth2'],
+                            allowedConnections: ['Username-Password-Authentication', 'facebook', 'google-oauth2'],
                             auth: {
                                 redirectUrl: 'https://app.greathearts.community/auth/auth0/callback',
                                 responseType: 'code',
