@@ -17,10 +17,10 @@ var OrgForm = function () {
                     {
                         required: true
                     },
-                    // member:
-                    // {
-                    //   required: true  
-                    // },
+                    member:
+                    {
+                      required: true  
+                    },
                     orgName:
                     {
                         required: true
@@ -76,7 +76,7 @@ var OrgForm = function () {
                         var orgForm = $(document).find('#orgForm');
                         var data = $(orgForm).serializeArray();
                         var request = $.ajax({
-                            url: 'http://localhost:3000/api/v1/organizations/org_recommendation',
+                            url: 'https://app.greathearts.community/api/v1/organizations/org_recommendation',
                             method: 'post',
                             data: data,
                             crossDomain: true
