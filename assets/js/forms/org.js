@@ -17,11 +17,11 @@ var OrgForm = function () {
                     {
                         required: true
                     },
-                    orgName:
+                    member:
                     {
-                        required: true
+                      required: true  
                     },
-                    title:
+                    orgName:
                     {
                         required: true
                     },
@@ -29,12 +29,11 @@ var OrgForm = function () {
                     {
                         required: true
                     },
-                    email:
+                    city:
                     {
-                        required: true,
-                        email: true
+                        required: false
                     },
-                    phone:
+                    state:
                     {
                         required: false
                     },
@@ -62,11 +61,11 @@ var OrgForm = function () {
                     },
                     orgName:
                     {
-                        required: 'Please enter your organization name'
+                        required: 'Please enter the organization name'
                     },
-                    title:
+                    ein:
                     {
-                        required: 'Please enter your title or role'
+                        required: 'Please enter the organization\'s EIN'
                     }
                 },
 
@@ -74,9 +73,8 @@ var OrgForm = function () {
                 submitHandler: function(form)
                 {
                     
-                    $(document).on('submit','#orgForm', function(e){
-                        e.preventDefault();
-                        var data = $(this).serializeArray();
+                        var orgForm = $(document).find('#orgForm');
+                        var data = $(orgForm).serializeArray();
                         var request = $.ajax({
                             url: 'https://app.greathearts.community/api/v1/organizations/org_recommendation',
                             method: 'post',
@@ -88,8 +86,6 @@ var OrgForm = function () {
                             $('#orgForm').remove();
                             $('.success-msg').addClass('flex-center-content').show();
                         });
-                    });
-                    Stamplay.init("greathearts");
 
                 },
 
