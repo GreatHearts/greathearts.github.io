@@ -25,10 +25,6 @@ var OrgForm = function () {
                     {
                         required: true
                     },
-                    ein:
-                    {
-                        required: true
-                    },
                     city:
                     {
                         required: false
@@ -62,10 +58,6 @@ var OrgForm = function () {
                     orgName:
                     {
                         required: 'Please enter the organization name'
-                    },
-                    ein:
-                    {
-                        required: 'Please enter the organization\'s EIN'
                     }
                 },
 
