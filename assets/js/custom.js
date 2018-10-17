@@ -34,9 +34,9 @@ $(document).ready(function() {
     }
   });
 
-  $('.slider-org').on('click', function(e) {
+  $('li.slider-org').on('click', function(e) {
       e.preventDefault();
-      var orgLink = $('li.slider-org').find('a').attr('href');
+      var orgLink = $(this).find('a').attr('href');
       window.location = orgLink;
   });
 });
