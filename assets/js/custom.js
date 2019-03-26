@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var request = $.ajax({
-        url: 'https://app.greathearts.community/api/v1/organizations',
+        url: 'http://localhost:3000/api/v1/organizations',
         method: 'get',
         crossDomain: true
     });
@@ -15,7 +15,7 @@ $(document).ready(function() {
                     "<div class='top-left-ribbon animated fadeIn'>" +
                     "<span>SUPPORTED</span></div>" +
                     "<div class='flipper d-flex align-items-center'>" +
-                    "<img class='front-logo mx-auto' src=" + value.logo_link + "alt=" + value.name + " >" +
+                    "<img class='front-logo mx-auto' src=" + value.logo_link + " alt=" + value.name + " >" +
                     "<div class='flip-side text-center flex-vertically-center-content'>" + value.name + "</div></div> </div> </a></li>"
                 )
             } else {
