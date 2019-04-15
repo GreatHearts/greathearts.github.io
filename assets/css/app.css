@@ -1122,19 +1122,6 @@ a:focus {
 figure {
   margin: 0;
 }
-.org-square {
-  width: 100px;
-  height: 100px;
-  vertical-align: middle;
-  text-align: center;
-  overflow: hidden;  
-}
-
-.org-square-logo {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
 
 .flex-horizontally-center-content {
   display: flex;
@@ -1147,12 +1134,6 @@ figure {
   justify-content: center;
 }
 
-.org-square img.org-square-logo-img {
-  max-height: 100%;
-  max-width: 100%;
-  vertical-align: middle;
-  padding: 5px;
-}
 img {
   vertical-align: middle;
 }
@@ -9377,4 +9358,166 @@ img.img-center,
 		transform: translateY(36px);
 		-webkit-transform: translateY(36px);
 	}
+}
+
+/* entire container, keeps perspective */
+#effect-2 .flip-container {
+    perspective: 1000px;
+    height: 102px;
+    width: 102px;
+    transform-style: preserve-3d;
+    display: table;
+}
+#effect-2 .flip-container:hover .back {
+    transform: rotateY(0deg);
+}
+#effect-2 .flip-container:hover .front {
+    transform: rotateY(180deg);
+}
+#effect-2 .front, #effect-2 .back {
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#effect-2 .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+#effect-2 .back {
+    background-color: #72c02c;
+    transform: rotateY(-180deg);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flipper-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flipper-logos .flipper-container {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.flipper-logos .flipper-container .flipper-logo {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border: 1px solid #ececec;
+}
+.section-partials > .flipper-logos > #effect-2 .org-square {
+    height: 102px;
+    width: 102px;
+}
+.flip-card-link {
+    text-decoration: none !important;
+}
+.flipping-logos.org-square.flip-container:hover .flipper img.front-logo {
+    animation: flipOutY 1s;
+    display: none;
+    transition: 1s;
+}
+.flipping-logos.org-square.flip-container:hover .flipper .flip-side {
+    display: flex;
+    animation: flipInY 1s;
+}
+.flipping-logos.org-square.flip-container:hover .top-left-ribbon {
+    display: none;
+    transition: 0.75s;
+}
+.flipping-logos.org-square.flip-container .top-left-ribbon {
+    animation-delay: 0.75s;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 3;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+}
+.flipping-logos.org-square.flip-container .top-left-ribbon {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 3;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+}
+.flipping-logos.org-square.flip-container .top-left-ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #79a70a;
+    background: linear-gradient(#9bc90d 0%, #64a826 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px;
+    left: -21px;
+}
+.flipping-logos.org-square.flip-container .top-left-ribbon span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #64a826;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #64a826;
+}
+.flipping-logos.org-square.flip-container .top-left-ribbon span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #64a826;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #64a826;
+}
+.flipping-logos.org-square.flip-container .flipper {
+    height: 100px;
+}
+.flipping-logos.org-square.flip-container .flipper .front-logo {
+    transition: 1s;
+    animation: flipInY 1s;
+    display: inherit;
+    transform-style: preserve-3d;
+    max-width: 100px;
+}
+.flipping-logos.org-square.flip-container .flipper .front-logo-container {
+    height: 100px;
+}
+.flipping-logos.org-square.flip-container .flipper .flip-side {
+    overflow: hidden;
+    display: none;
+    color: white;
+    background-color: #72c02c;
+    height: 100px;
+    width: 100px;
 }
