@@ -10,7 +10,7 @@ $(document).ready(function() {
         $.each(orgsJson, function(index,value){
             if(value.supported){
                 $("#effect-2").append(
-                    "<li><a class='flip-card-link' href='/nonprofits/afrika-tikkun-usa'>" +
+                    "<li><a class='flip-card-link' href=" + value.link + ">" +
                     "<div class='flipping-logos org-square flip-container'>" +
                     "<div class='top-left-ribbon animated fadeIn'>" +
                     "<span>SUPPORTED</span></div>" +
@@ -20,7 +20,7 @@ $(document).ready(function() {
                 )
             } else {
                 $("#effect-2").append(
-                    "<li><a class='flip-card-link' href='/nonprofits/afrika-tikkun-usa'>" +
+                    "<li><a class='flip-card-link' href=" + value.link + ">" +
                     "<div class='flipping-logos org-square flip-container'>" +
                     "<div class='flipper d-flex align-items-center'>" +
                     "<img class='front-logo mx-auto' src=" + value.logo_link + "alt=" + value.name + " >" +
