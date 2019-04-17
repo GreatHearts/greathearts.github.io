@@ -11518,11 +11518,10 @@ img.img-center,
 .flipping-logos.org-square.flip-container .flipper .front-logo {
     transition: 1s;
     animation: flipInY 1s;
-    display: inherit;
     transform-style: preserve-3d;
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: scale-down;
+    height: 100px;
+    max-width: 100px;
+    object-fit: contain;
 }
 
 .flipping-logos.org-square.flip-container .flipper .front-logo-container {

@@ -22,8 +22,8 @@ $(document).ready(function() {
                 $("#effect-2").append(
                     "<li><a class='flip-card-link' href=" + value.link.replace(/\/$/, "") + ">" +
                     "<div class='flipping-logos org-square flip-container'>" +
-                    "<div class='flipper d-flex align-items-center'>" +
-                    "<img class='front-logo mx-auto' src=" + value.logo_link + "alt=" + value.name + " >" +
+                    "<div class='flipper center-block'>" +
+                    "<img class='front-logo img-responsive' src=" + value.logo_link + "alt=" + value.name + " >" +
                     "<div class='flip-side text-center flex-vertically-center-content'>" + value.name + "</div></div> </div> </a></li>"
                 )
             }
