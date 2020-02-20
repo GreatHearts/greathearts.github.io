@@ -34,27 +34,6 @@
                 <!--and give award-->
                 <!--clicklets-->
                 <!--for the <em>Great Hearts Awards</em>.</h5>-->
-                <div id="auth0-root" style="width: 320px; margin: 40px auto; padding: 10px;"></div>
-                <script type="text/javascript">
-                      var lock = new Auth0Lock('H3M1d2hsFo2hISIz6CUD6okg7Dew6rDI', 'greathearts.auth0.com', {
-                        container: 'auth0-root',
-                        allowedConnections: ['Username-Password-Authentication','facebook','google-oauth2'],
-                        auth: {
-                            redirectUrl: 'https://app.greathearts.community/auth/auth0/callback',
-                            responseType: 'code',
-                            params: {
-                                scope: 'openid email', // Learn about scopes: https://auth0.com/docs/scopes
-                            }
-                        },
-                        theme: {
-                            logo: "assets/img/GHILogo2.png",
-                            primaryColor: '#72C02C'
-                        },
-                        rememberLastLogin: false,
-                        initialScreen: 'signUp',
-                      });
-                      lock.show();
-                </script>
 
             </div>
         </div>
@@ -64,20 +43,6 @@
             <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header ">
-                    <ul id="mobile-list">
-                        <li>
-                            <a onClick="signUpLock.show();" class="login-button btn-default" id="login-mobile" href="#">
-                                Login
-                            </a>
-                            
-                        </li>
-                        <li>
-                            <a class="signup--button" id="signup-mobile" data-toggle="modal" data-target="#signupModal" href="#">
-                                Sign Up
-                            </a>
-                            
-                        </li>
-                    </ul>
                           
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
@@ -119,18 +84,6 @@
                             <div class="btn btn-default" id="search-btn"><i class="search fa fa-search search-btn"></i></div>
                         </a>
                     </form>
-                    <ul class="nav navbar-nav navbar-right login" id="login">
-                        <li>
-                            <a class="signup-button btn-primary" data-toggle="modal" data-target="#signupModal" href="#">
-                                Signup
-                            </a>
-                        </li>
-                        <li>
-                            <a class="btn-default" href="#" onClick="signUpLock.show();">
-                                Login
-                            </a>
-                        </li>
-                    </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
