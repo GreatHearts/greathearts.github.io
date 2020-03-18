@@ -121,3 +121,20 @@ background: rgba(241,241,241,0.8);
 .slider-org {
     cursor: pointer;
 }
+
+
+.ways-to-join {
+    width: 75%;
+    margin: 50px auto 0;
+}
+
+.ways-to-join .fa {
+    font-size: xx-large;
+    color: #72c02c;
+}
+
+.ways-to-join p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+}
